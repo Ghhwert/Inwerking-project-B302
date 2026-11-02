@@ -1,6 +1,7 @@
 import Field from "../components/Field"
-import logo from "../assets/logo.svg"
+import logo from "../assets/LoginAssets/logo.svg"
 import illustration from "../assets/LoginAssets/illustration.svg"
+import { Link } from "react-router-dom"
 
 function BrandPanel(){
   return ( 
@@ -45,8 +46,8 @@ function LoginPanel(){
         <p className="self-stretch
           font-sans text-[14px] font-medium leading-[140%]">Zonder login kun je alles bekijken. Genres toevoegen, wijzigen of verwijderen mag alleen een admin.</p>
         <div className="login-guest">
-        <a href="#" className="continue-as-guest text-cobalt font-sans text-[16px] font-bold 
-          hover:text-mint">Verder zonder inloggen→</a>
+        <Link to="/boeken" className="continue-as-guest text-cobalt font-sans text-[16px] font-bold 
+          hover:text-mint">Verder zonder inloggen→</Link>
         </div>
       </div>
     </div>
