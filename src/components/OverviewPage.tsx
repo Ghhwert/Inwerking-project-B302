@@ -12,6 +12,9 @@ type OverviewPageProps<T> = {
 
 export default function OverviewPage<T>({ config, renderActions }: OverviewPageProps<T>) {
   const { items, loading, error } = useList<T>(config.path);
+
+  console.log(items);
+
   const [query, setQuery] = useState("");
 
   const visible = items.filter((item) =>
@@ -66,3 +69,5 @@ export default function OverviewPage<T>({ config, renderActions }: OverviewPageP
     </section>
   );
 }
+
+// Zoekbutton en svg's 

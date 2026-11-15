@@ -17,7 +17,7 @@ export default function App() {
       <Route element={<MainLayout />}>
         <Route path="/boeken" element={<Boeken />} />
         <Route path="/auteurs" element={<Auteurs />} />
-        <Route path="/genre" element={<Genres />} />
+        <Route path="/genres" element={<Genres />} />
       </Route>
 
       <Route path="*" element={<Navigate to="/login" replace />} />

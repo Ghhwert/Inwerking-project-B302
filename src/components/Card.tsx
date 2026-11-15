@@ -28,7 +28,7 @@ export default function Card({ badge, badgeColor, title, meta = [], actions }: C
         </ul>
       )}
 
-      <hr className="border-t-2 border-ink-soft" />
+      <hr className="w-full my-6 border-t border-ink-soft" />
 
       {actions && <div className="flex gap-2">{actions}</div>}
     </article>

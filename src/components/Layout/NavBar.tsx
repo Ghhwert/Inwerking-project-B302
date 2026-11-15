@@ -36,3 +36,6 @@ export default function NavBar(){
     </div>
   )
 }
+
+// Fix die kleuren en isAdmin ? admin badge : niets
+// Alr buddy ternary operator in je comment.

@@ -1,6 +1,6 @@
+import OverviewPage from "../components/OverviewPage";
+import {booksConfig} from "../config/Overviews"
+
 export default function Boeken() {
-  return (
-    <div>
-    </div>
-  );
+  return <OverviewPage config={booksConfig} />;
 }

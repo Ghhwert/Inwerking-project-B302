@@ -17,7 +17,8 @@ export function useList<T>(path: string) {
 
     authFetch(path)
       .then((data) => {
-        if (!cancelled) setItems(data);
+        console.log("antwoord:", data);
+        if (!cancelled) setItems(Array.isArray(data) ? data : data.data ?? []);
       })
       .catch((err) => {
         if (!cancelled) {
