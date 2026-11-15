@@ -10,7 +10,9 @@ export default function BrandPanel(){
       </a>
       <img src={illustration} alt="" className="illustration w-7/8 max-w-[560px]" />
       <p className="welcome font-display text-[56px] font-semibold leading-none tracking-[-2.16px]
-        text-white">Welkom terug,<br /><i>boekenwurm.</i></p>
+        text-white">
+        Welkom terug,<br /><i>boekenwurm.</i>
+      </p>
     </div>
   )
 }
