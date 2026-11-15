@@ -1,6 +1,6 @@
 import{Route, Routes, Navigate, Outlet} from "react-router-dom"
 
-import Login from "./pages/Login.tsx";
+import Login from "./pages/Login/Login.tsx";
 import Boeken from "./pages/Boeken.tsx";
 import Auteurs from "./pages/Auteurs.tsx";
 import Genres from "./pages/Genres.tsx";
@@ -35,7 +35,7 @@ export default function App() {
         <Route path="/genre" element={<Genres />} />
       </Route>
 
-      <Route path="*" element={<Navigate to="/boeken" replace />} />
+      <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
   )
 }

@@ -1,4 +1,5 @@
-import Field from "../components/Field"
+import Field from "../../components/Field"
+import Badge from "../../components/Badge"
 import logo from "../assets/LoginAssets/logo.svg"
 import illustration from "../assets/LoginAssets/illustration.svg"
 import { Link } from "react-router-dom"
@@ -37,9 +38,7 @@ function LoginPanel(){
       <div className="login-card flex w-4/5 max-w-[440px] px-10 py-10  flex-col gap-6
         rounded-xl border-2 border-ink bg-white shadow-hard">
         <div className="frame flex flex-col items-start gap-2 w-full">
-          <span className="badge flex px-3 py-1 items-center gap-1
-            rounded-full border-[1.5px] border-ink bg-cobalt
-            font-mono text-white text-xs font-medium leading-[120%] tracking-[0.96px]">ADMIN</span>
+          <Badge />
           <p className="inloggen font-display text-[44px] font-semibold leading-[105%] tracking-[-0.88px]">Inloggen</p>
         </div>
         <LoginForm />
@@ -62,3 +61,9 @@ export default function Login(){
     </div>
   )
 }
+
+// Elke component opsplitsen en hun eigen file geven.
+
+// http client voor api
+
+// useform lib, tenstack
