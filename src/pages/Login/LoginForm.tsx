@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm } from "@tanstack/react-form";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../components/AuthContext";
+import { useAuth } from "../../context/AuthContext";
 import Field from "../../components/Field";
 
 export default function LoginForm() {

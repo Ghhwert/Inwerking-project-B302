@@ -1,26 +1,11 @@
-import{Route, Routes, Navigate, Outlet} from "react-router-dom"
+import{Route, Routes, Navigate} from "react-router-dom"
 
 import Login from "./pages/Login/Login.tsx";
 import Boeken from "./pages/Boeken.tsx";
 import Auteurs from "./pages/Auteurs.tsx";
 import Genres from "./pages/Genres.tsx";
 
-import NavBar from "./components/NavBar.tsx";
-import Footer from "./components/Footer.tsx";
-
-
-
-function MainLayout(){
-  return (
-    <div className="flex min-h-screen flex-col">
-      <NavBar />
-      <main className="flex-1">
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
-  )
-}
+import MainLayout from "./components/Layout/MainLayout.tsx";
 
 export default function App() {
   return (

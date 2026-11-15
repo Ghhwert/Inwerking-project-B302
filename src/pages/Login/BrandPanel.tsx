@@ -1,5 +1,5 @@
-import logo from "../../assets/LoginAssets/logo.svg"
-import illustration from "../../assets/LoginAssets/illustration.svg"
+import logo from "../../assets/Login/logo.svg"
+import illustration from "../../assets/Login/illustration.svg"
 
 export default function BrandPanel(){
   return ( 

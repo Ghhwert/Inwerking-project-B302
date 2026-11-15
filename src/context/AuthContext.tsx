@@ -38,7 +38,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const logout = () => {
     sessionStorage.removeItem("token");
     setToken(null);
-  };
+  }; 
 
   const authFetch = async (path: string, options: RequestInit = {}) => {
     const res = await fetch(`${API_URL}${path}`, {

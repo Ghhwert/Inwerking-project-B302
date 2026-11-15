@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
-import logo from "../assets/NavBarAssets/Logo.svg"
-import Badge from "./Badge"
+import logo from "../../assets/Navbar/Logo.svg"
+import Badge from "../Badge"
 
 function NavButton({buttonText, pathToPage, bgColor="bg-transparent"}: {buttonText: string, pathToPage: string, bgColor?: string}){
   return(
@@ -26,8 +26,8 @@ export default function NavBar(){
         <img src={logo} alt="" />
         <nav className="flex gap-2">
             <NavButton buttonText="Boeken" pathToPage="/boeken" bgColor="bg-sunny"  />
-            <NavButton buttonText="Boeken" pathToPage="/auteurs" />
-            <NavButton buttonText="Boeken" pathToPage="/genres" />
+            <NavButton buttonText="Auteurs" pathToPage="/auteurs" />
+            <NavButton buttonText="Genres" pathToPage="/genres" />
         </nav>
         <div className="flex gap-2 items-center">
           <Badge />
