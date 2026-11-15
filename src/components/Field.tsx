@@ -18,6 +18,12 @@ export default function Field({label, id, error, ...props}: FieldProps){
           ${error ? "border-coral" : "border-ink hover:border-cobalt"}'
           {...props}
       />
+
+      {error &&(
+        <p role="alert" className="text-sm text-error">
+          {error}
+        </p>
+      )}
     </div>
   )
 }
