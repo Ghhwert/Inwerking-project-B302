@@ -58,7 +58,7 @@ export default function OverviewPage<T>({ config, renderActions }: OverviewPageP
             <Card
               key={config.getKey(item)}
               badge={config.badge}
-              badgeColor={config.badgeColor}
+              badgeColor={config.color}
               title={card.title}
               meta={card.meta}
               actions={renderActions?.(item)}

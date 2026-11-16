@@ -1,3 +1,6 @@
+import OverviewPage from "../components/OverviewPage";
+import { genreConfig } from "../config/Overviews";
+
 export default function Genres(){
-    return <div></div>
+    return <OverviewPage config={genreConfig} />;
 }
