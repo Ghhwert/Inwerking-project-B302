@@ -6,7 +6,7 @@ import { useAuth } from "../../context/AuthContext";
 type NavButtonProps = {
   buttonText: string;
   pathToPage: string;
-  activeColor: string; // volledige class, bv. "bg-book"
+  activeColor: string;
 };
 
 function NavButton({ buttonText, pathToPage, activeColor }: NavButtonProps) {

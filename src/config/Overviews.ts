@@ -48,8 +48,7 @@ export const booksConfig: OverviewConfig<Book> = {
   toCard: (b) => ({
     title: b.name,
     meta: [
-      b.author?.name ?? "Onbekende auteur",
-      String(b.year),
+      `${b.author?.name ?? "Onbekende auteur"} · ${String(b.year)}`,
       b.genres?.map((g) => g.name).join(", ") ?? "",
     ],
   }),

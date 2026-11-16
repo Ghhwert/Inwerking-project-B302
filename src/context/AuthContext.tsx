@@ -30,9 +30,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     if (!res.ok) throw new Error("Inloggen mislukt. Controleer je gegevens.");
 
-    const data = await res.json();
-    sessionStorage.setItem("token", data.token);
-    setToken(data.token);
+    const body = await res.json();
+    const newToken = body.data?.access_token;
+
+    if (!newToken) throw new Error("Geen token ontvangen van de server.");
+
+    sessionStorage.setItem("token", newToken);
+    setToken(newToken);
   };
 
   const logout = () => {
